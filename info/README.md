@@ -16,24 +16,34 @@ These are my information files.
 ### **1. home page**
 
 <img width="700" alt="page_home" src="https://github.com/likelion-12nd-frontend-thursday/tnqkr3494/assets/105264785/0382e828-f4f2-4db3-9e5f-a4a195269945" />
+
+
 처음 시작 화면으로 about page, project page로 가는 버튼이 구현되어 있다.
 위에 header를 이용해서도 페이지를 이동할 수 있다.
+
 또한 header 가장 오른쪽 아이콘을 이용하여 dark mode, light mode기능도 구현해보았다.
+
 
 ### **2. about page**
 
 <img width="700" alt="page_about" src="https://github.com/likelion-12nd-frontend-thursday/tnqkr3494/assets/105264785/e9fb8179-2acc-4700-bb1c-65ccac8824fa"/>
+
+
 나에 대한 상세한 설명을 적어놓은 페이지.
 
 그림 오른쪽에 보이는 컴퓨터는 마우스를 이용해서 움직이게 할 수 있고,
 줌인, 줌아웃도 가능하다.
 
+
 ### **3. project page**
 
 <img width="1407" alt="page_project" src="https://github.com/likelion-12nd-frontend-thursday/tnqkr3494/assets/105264785/c2923bc6-a0bd-4a28-b498-40e65c95b156" />
+
+
 지금까지 해온 프로젝트를 정리해놓은 페이지
 
 앞으로 다양한 프로젝트를 경험하면서 추가해 나갈 예정...
+
 
 ## **3. TakeAway(느낀점 및 결론)**
 
