@@ -7,7 +7,7 @@ import { Computer } from "../computer";
 import Life from "@/components/lifetime";
 import Link from "next/link";
 import ChatBubble from "@/components/chatbubble";
-import { icons } from "../utils/skills";
+import { icons } from "../../utils/skills";
 import IconCircle from "@/components/iconCircle";
 
 export default function AboutMe() {
