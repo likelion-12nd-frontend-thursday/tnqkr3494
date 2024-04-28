@@ -131,6 +131,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
 
 /* 초기 설정 끝 */
 
@@ -227,4 +230,34 @@ main h3 {
   margin-bottom: 2rem;
   position: absolute;
   animation: bounce 2s infinite;
+}
+
+.calculator {
+  width: 500px;
+}
+
+.calculator-main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.calculator-main input,
+button {
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+}
+
+.calculator button {
+  background-color: #ffa343;
+  color: aliceblue;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.calculator button:hover {
+  transform: scale(1.2);
 }
