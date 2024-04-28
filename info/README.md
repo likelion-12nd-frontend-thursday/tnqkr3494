@@ -4,8 +4,6 @@ These are my information files.
 
 ## **1. Tools(사용한 기술들)**
 
----
-
 - **TypeScript** : JavaScript 쓰지 마세요.
 - **NextJS(Also React)** : 프로젝트의 기반이 된 프레임워크
 - **TailWindCSS**(아래는 플러그인들)
@@ -14,8 +12,6 @@ These are my information files.
 - **react-three-fiber** : 3d컴퓨터 랜더링 해보려고(가오용)추가해 본 라이브러리
 
 ## **2. Pages(전체 페이지 구조)**
-
----
 
 ### **1. home page**
 
@@ -40,8 +36,6 @@ These are my information files.
 앞으로 다양한 프로젝트를 경험하면서 추가해 나갈 예정...
 
 ## **3. TakeAway(느낀점 및 결론)**
-
----
 
 나만의 포트폴리오 페이지를 만들어 볼 수 있어서 기뻤습니다.
 
