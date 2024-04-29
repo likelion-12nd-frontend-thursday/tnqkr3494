@@ -5,3 +5,7 @@
 ### **2. info**
 
 NextJS를 이용한 포트폴리오 사이트
+
+### **3. practice**
+
+React 공부용 폴더
