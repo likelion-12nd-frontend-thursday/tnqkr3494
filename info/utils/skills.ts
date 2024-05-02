@@ -1,79 +1,79 @@
 export const icons = [
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg",
+    link: "apple.svg",
     name: "macOS",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+    link: "vscode.svg",
     name: "vscode",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/notion/notion-original.svg",
+    link: "notion.svg",
     name: "notion",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    link: "python.svg",
     name: "python",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
+    link: "java.svg",
     name: "java",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+    link: "html.svg",
     name: "HTML",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+    link: "css.svg",
     name: "CSS",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    link: "js.svg",
     name: "JS",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+    link: "ts.svg",
     name: "TS",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    link: "react.svg",
     name: "React",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/reactrouter/reactrouter-original-wordmark.svg",
+    link: "reactrouter.svg",
     name: "Router",
   },
-  { link: "/recoil.svg", name: "recoil" },
+  { link: "recoil.svg", name: "recoil" },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original-wordmark.svg",
+    link: "nextjs.svg",
     name: "NextJS",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    link: "tailwind.svg",
     name: "tailwind",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
+    link: "prisma.svg",
     name: "prisma",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original-wordmark.svg",
+    link: "vercel.svg",
     name: "vercel",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg",
+    link: "spring.svg",
     name: "spring",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    link: "git.svg",
     name: "git",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    link: "github.svg",
     name: "github",
   },
   {
-    link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg",
+    link: "npm.svg",
     name: "npm",
   },
 ];
