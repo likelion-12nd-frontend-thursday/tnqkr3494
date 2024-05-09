@@ -9,7 +9,9 @@ These are my information files.
 - **TailWindCSS**(아래는 플러그인들)
   - **tailwindcss-animated** : 간단한 애니메이션 기능 구현 플러그인
   - **daisyui** : 나 같이 디자인 못하는 사람들도 디자이너 뺨치는 실력으로 만들어주는 플러그인
-- **react-three-fiber** : 3d컴퓨터 랜더링 해보려고(가오용)추가해 본 라이브러리
+- **react-three-fiber** : 3d컴퓨터 랜더링 해보려고 추가해 본 라이브러리
+- https://sketchfab.com/ : 3d컴퓨터 모델 출처 사이트
+- https://devicon.dev/ : about page에서 사용한 아이콘 출처 사이트
 
 ## **2. Pages(전체 페이지 구조)**
 
