@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
+import { data } from "./utils/data";
 
 const Wrapper = styled.div`
   padding: 5rem 10rem;
@@ -16,46 +17,73 @@ const Header = styled.div`
   margin-bottom: 5rem;
 `;
 
-const CardWrapper = styled.main`
+const MainWrapper = styled.main`
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
 `;
 
-const Card = styled.div`
-  width: 500px;
-  height: 500px;
-  background-color: aliceblue;
+const Stacks = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+`;
+
+const StacksImg = styled.li`
+  cursor: pointer;
+`;
+
+const InputDiv = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 
 function App() {
-  const cardRefs = useRef<Array<HTMLDivElement | null>>([null, null, null]);
-
-  const scrollToIndex = (index: number) => {
-    if (cardRefs.current[index]) {
-      cardRefs.current[index]?.scrollIntoView({ behavior: "smooth" });
+  const [text, setText] = useState("");
+  const [skills, setSkills] = useState([""]);
+  const onChanged = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setText(e.target.value);
+  };
+  const onClicked = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (data.some((stack) => text === stack.name)) {
+      setSkills((prev) => {
+        return [...prev, text];
+      });
+    } else {
+      alert(`${text} => 이 기술은 없습니다.`);
     }
+    setText("");
+  };
+
+  const onDoubleclicked = (idx: number) => {
+    setSkills((prev) => prev.filter((_, index) => idx !== index));
   };
 
   return (
     <Wrapper>
       <Header>
-        <h1>useRef 이용하기</h1>
-        <button onClick={() => scrollToIndex(0)}>Index1</button>
-        <button onClick={() => scrollToIndex(1)}>Index2</button>
-        <button onClick={() => scrollToIndex(2)}>Index3</button>
+        <h1>과제1 : Event-Handling과 map함수 이용 + useState 맛보기</h1>
       </Header>
-      <CardWrapper>
-        <Card ref={(el) => (cardRefs.current[0] = el)}>
-          <h2>Index1</h2>
-        </Card>
-        <Card ref={(el) => (cardRefs.current[1] = el)}>
-          <h2>Index2</h2>
-        </Card>
-        <Card ref={(el) => (cardRefs.current[2] = el)}>
-          <h2>Index3</h2>
-        </Card>
-      </CardWrapper>
+      <MainWrapper>
+        <h2>등록가능한 스택 이름(대문자까지 일치해야함)</h2>
+        <Stacks>
+          {data.map((stack, index) => (
+            <li key={index}>{stack.name}</li>
+          ))}
+        </Stacks>
+        <InputDiv>
+          <input type="text" onChange={onChanged} value={text} />
+          <button onClick={onClicked}>추가</button>
+        </InputDiv>
+        <Stacks>
+          {skills.map((skill, index) => (
+            <StacksImg key={index} onDoubleClick={() => onDoubleclicked(index)}>
+              <img src={`/${skill}.png`} alt="" />
+            </StacksImg>
+          ))}
+        </Stacks>
+      </MainWrapper>
     </Wrapper>
   );
 }
