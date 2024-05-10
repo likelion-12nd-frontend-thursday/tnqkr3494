@@ -77,11 +77,21 @@ function App() {
           <button onClick={onClicked}>추가</button>
         </InputDiv>
         <Stacks>
-          {skills.map((skill, index) => (
-            <StacksImg key={index} onDoubleClick={() => onDoubleclicked(index)}>
-              <img src={`/${skill}.png`} alt="" />
-            </StacksImg>
-          ))}
+          {skills.map((skill, index) => {
+            const findSkill = data.find((stack) => stack.name === skill);
+            if (findSkill) {
+              return (
+                <StacksImg
+                  key={index}
+                  onDoubleClick={() => onDoubleclicked(index)}
+                >
+                  <img src={findSkill.img} alt={findSkill.name} />
+                </StacksImg>
+              );
+            } else {
+              return null;
+            }
+          })}
         </Stacks>
       </MainWrapper>
     </Wrapper>
