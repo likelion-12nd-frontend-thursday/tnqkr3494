@@ -39,7 +39,7 @@ const InputDiv = styled.div`
   justify-content: center;
 `;
 
-function App() {
+function HW1() {
   const [text, setText] = useState("");
   const [skills, setSkills] = useState([""]);
   const onChanged = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -98,4 +98,4 @@ function App() {
   );
 }
 
-export default App;
+export default HW1;
